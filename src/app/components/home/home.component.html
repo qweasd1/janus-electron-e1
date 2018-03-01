@@ -1,0 +1,9 @@
+<span *ngFor="let video of localVideos" style="display: inline-block;height: 30%;">
+    <p>{{video.name}}</p>
+    <video  [srcObject]="video.stream" autoplay></video>
+</span>
+
+<span *ngFor="let video of remoteVideos" style="display: inline-block;height: 30%;">
+    <p>{{video.name}}</p>
+    <video  [srcObject]="video.stream" autoplay></video>
+</span>
